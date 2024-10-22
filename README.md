@@ -1,4 +1,4 @@
-# General Methodology of Handling the Integration of Big Dataflow on a Linux Server
+# General Methodology of Handling the Integration of Big Dataflow on Multiple Linux Servers
 
 # 1. Nginx Access.log Generator
 
