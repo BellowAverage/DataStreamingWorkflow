@@ -1,5 +1,41 @@
 # General Methodology of Handling the Integration of Big Dataflow on Multiple Linux Servers
 
+This project is a distributed log processing system that simulates web traffic, collects logs using Flume, processes them with Kafka and Flink, and visualizes the results using Elasticsearch. This project demonstrates scalable data stream processing for log analysis.
+
+## Project Overview
+
+- **Nginx**: Generates access logs by simulating multiple IP accesses.
+- **Squid Proxies**: Simulates access from different IP addresses.
+- **Flume**: Collects and forwards Nginx logs.
+- **Kafka**: Acts as a distributed message broker for real-time log streaming.
+- **Flink**: Processes the streamed logs for analytics.
+- **Elasticsearch**: Visualizes processed logs for insights.
+
+## Running the Project
+
+1. Set up the required services using the `start_services.sh` script.
+2. Generate web requests using the `request_generator.py` script.
+3. View logs in Elasticsearch.
+
+## Prerequisites
+
+- Nginx
+- Squid
+- Python 3.x
+- Flume
+- Kafka
+- Flink
+- Elasticsearch
+
+## Project Structure
+
+- `nginx/`: Nginx configuration.
+- `flume/`: Flume agent configuration.
+- `kafka/`: Kafka and Zookeeper configuration.
+- `python/`: Python script for generating web requests.
+- `elasticsearch/`: Elasticsearch settings and visualization tools.
+- `scripts/`: Scripts to start and manage services.
+
 # 1. Nginx Access.log Generator
 
 Created: September 12, 2024, 1:48 PM  
